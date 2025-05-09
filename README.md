@@ -4,21 +4,6 @@
 
 This project demonstrates the basics of setting up an MLOps pipeline using the Iris dataset and logistic regression. It implements model training, evaluation, and (data) versioning as part of a robust machine learning pipeline.
 
-## Project Structure
-
-```
-├── data/                  # Data directory
-├── models/                # Saved model artifacts
-├── notebooks/             # Jupyter notebooks for exploration
-├── src/                   # Source code
-│   ├── train.py           # Model training script
-│   ├── evaluate.py        # Model evaluation script
-│   └── utils.py           # Utility functions
-├── tests/                 # Unit tests
-├── requirements.txt       # Project dependencies
-└── README.md              # This file
-```
-
 ## Setup Instructions
 
 1. Clone the repository.
@@ -36,26 +21,37 @@ This project demonstrates the basics of setting up an MLOps pipeline using the I
 
 - Run the training pipeline:
   ```
-  python src/train.py
+  python iris_pipeline_mlflow.py
   ```
 
-- Evaluate model performance:
+- Autolog the model with MLflow:
   ```
-  python src/evaluate.py
+  python mlflow_autologging.py
   ```
+-  Run the tests :
+  ```
+  python test_iris_pipeline.py
+  ```
+## Note :
+You will need to set up an MLflow tracking server to log the model artifacts. You can do this by running:
+```
+mlflow ui
+```
+Moreoevr, you can change your `dvc` remote storage in the `dvc.yaml` file. For example, to use S3, you can set:
+```
+dvc remote add -d myremote s3://mybucket/path
+```
+Or change in the `config` file:
 
-- Experiment with parameters in the notebooks directory
-
-## CI/CD Pipeline
-
-The project includes GitHub Actions workflows for:
-- Running tests
-- Model validation
-- Continuous deployment
 
 ## Requirements
 
 See `requirements.txt` for a full list of dependencies.
+
+## Further Reading
+- [MLflow Documentation](https://www.mlflow.org/docs/latest/index.html)
+- [DVC Documentation](https://dvc.org/doc)
+- [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
