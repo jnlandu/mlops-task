@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/851171224807025906/d2a308a2ab364c1b8897134409c76a8c/artifacts
+end_time: 1725827338140
+entry_point_name: ''
+experiment_id: '851171224807025906'
+lifecycle_stage: active
+run_id: d2a308a2ab364c1b8897134409c76a8c
+run_name: clumsy-gnu-427
+run_uuid: d2a308a2ab364c1b8897134409c76a8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725827336953
+status: 3
+tags: []
+user_id: princemensah

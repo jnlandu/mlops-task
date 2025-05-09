@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/743910946083619820/9b6da528918f4aa78cd13bec5eea8c22/artifacts
+end_time: 1725825251964
+entry_point_name: ''
+experiment_id: '743910946083619820'
+lifecycle_stage: active
+run_id: 9b6da528918f4aa78cd13bec5eea8c22
+run_name: glamorous-conch-242
+run_uuid: 9b6da528918f4aa78cd13bec5eea8c22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725825250550
+status: 3
+tags: []
+user_id: princemensah
