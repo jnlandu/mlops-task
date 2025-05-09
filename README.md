@@ -56,3 +56,6 @@ The project includes GitHub Actions workflows for:
 ## Requirements
 
 See `requirements.txt` for a full list of dependencies.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
